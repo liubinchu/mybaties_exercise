@@ -7,11 +7,11 @@
         <result property="roleName" column="role_name"></result>
         <result property="roleDesc" column="role_desc"></result>
         <collection property="users" ofType="com.sample.domain.User">
-            <id column="id" property="id"></id>
-            <result column="username" property="username"></result>
-            <result column="address" property="address"></result>
-            <result column="sex" property="sex"></result>
-            <result column="birthday" property="birthday"></result>
+            <id column="id" property="userId"></id>
+            <result column="username" property="userName"></result>
+            <result column="address" property="userAddress"></result>
+            <result column="sex" property="userSex"></result>
+            <result column="birthday" property="userBirthday"></result>
         </collection>
     </resultMap>
     <select id="findAll" resultMap="roleMap"> <!--查询所有-->
