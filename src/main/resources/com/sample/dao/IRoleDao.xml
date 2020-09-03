@@ -6,7 +6,7 @@
         <id property="roleId" column="rid"></id>
         <result property="roleName" column="role_name"></result>
         <result property="roleDesc" column="role_desc"></result>
-        <collection property="users" ofType="user">
+        <collection property="users" ofType="com.sample.domain.User">
             <id column="id" property="id"></id>
             <result column="username" property="username"></result>
             <result column="address" property="address"></result>
